@@ -25,7 +25,7 @@ class SuspendCommand extends Command {
     constructor() {
         super({
             trigger: 'suspend',
-            description: 'Temporarily fires a user.',
+            description: 'Temporarily demotes a user, and re-ranks them once their suspension has ended.',
             type: 'ChatInput',
             module: 'suspensions',
             args: [
@@ -42,9 +42,9 @@ class SuspendCommand extends Command {
                 },
                 {
                     trigger: 'reason',
-                    description: 'If you would like a reason to be supplied in the logs, put it here.',
+                    description: 'What is the reason for suspending this user?',
                     isLegacyFlag: true,
-                    required: false,
+                    required: true,
                     type: 'String',
                 },
             ],
