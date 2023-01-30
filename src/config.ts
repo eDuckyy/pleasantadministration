@@ -1,11 +1,11 @@
 import { BotConfig } from './structures/types'; 
 
 export const config: BotConfig = {
-    groupId: 0,
+    groupId: 4502106,
     slashCommands: true,
     legacyCommands: {
         enabled: true,
-        prefixes: ['q!'],
+        prefixes: ['!'],
     },
     permissions: {
         all: [''],
@@ -17,16 +17,16 @@ export const config: BotConfig = {
         admin: [''],
     },
     logChannels: {
-        actions: '',
-        shout: '',
+        actions: '1001020821495627827',
+        shout: '1001020821495627827',
     },
     database: {
-        enabled: false,
+        enabled: true,
         type: 'mongodb',
     },
     api: false,
-    maximumRank: 255,
-    verificationChecks: false,
+    maximumRank: 241,
+    verificationChecks: true,
     firedRank: 1,
     suspendedRank: 1,
     recordManualActions: true,
@@ -49,17 +49,17 @@ export const config: BotConfig = {
         ],
     },
     antiAbuse: {
-        enabled: false,
+        enabled: true,
         clearDuration: 1 * 60,
-        threshold: 5,
+        threshold: 7,
         demotionRank: 1,
         bypassRoleId: '',
     },
     activity: {
-        enabled: false,
-        type: 'WATCHING',
-        value: 'for commands.',
+        enabled: true,
+        type: 'PLAYING',
+        value: 'Pleasant Hotels',
     },
     status: 'online',
-    deleteWallURLs: false,
+    deleteWallURLs: true,
 }
