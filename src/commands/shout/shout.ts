@@ -12,7 +12,7 @@ class ShoutCommand extends Command {
     constructor() {
         super({
             trigger: 'shout',
-            description: 'Posts a shout on the Roblox group.',
+            description: 'Posts a shout on the Pleasant Hotels group.',
             type: 'ChatInput',
             module: 'shout',
             args: [
@@ -25,7 +25,7 @@ class ShoutCommand extends Command {
                 },
                 {
                     trigger: 'reason',
-                    description: 'If you would like a reason to be supplied in the logs, put it here.',
+                    description: 'What is the reason for you changing the group shout?',
                     isLegacyFlag: true,
                     required: false,
                     type: 'String',
