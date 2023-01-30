@@ -21,7 +21,7 @@ class GroupBanCommand extends Command {
     constructor() {
         super({
             trigger: 'groupban',
-            description: 'Bans someone from the group',
+            description: 'Cloud-Bans someone from ever joining the group',
             type: 'ChatInput',
             module: 'admin',
             args: [
@@ -34,8 +34,8 @@ class GroupBanCommand extends Command {
                 },
                 {
                     trigger: 'reason',
-                    description: 'If you would like a reason to be supplied in the logs, put it here.',
-                    required: false,
+                    description: 'Please supply a reason to ban this user from the group.',
+                    required: true,
                     type: 'String'
                 }
             ],
