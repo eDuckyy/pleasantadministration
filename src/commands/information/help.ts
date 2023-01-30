@@ -12,7 +12,7 @@ class HelpCommand extends Command {
     constructor() {
         super({
             trigger: 'help',
-            description: 'Gets a list of commands to try.',
+            description: 'Displays a command information portal',
             type: 'ChatInput',
             module: 'information',
             args: [
