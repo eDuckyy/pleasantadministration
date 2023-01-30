@@ -18,13 +18,13 @@ class UnGroupBanCommand extends Command {
     constructor() {
         super({
             trigger: 'ungroupban',
-            description: 'Unbans someone from the group',
+            description: 'Removes the Cloud-Ban preventing the user to join the group',
             type: 'ChatInput',
             module: 'admin',
             args: [
                 {
                     trigger: 'roblox-user',
-                    description: 'Who do you wish to unban from the group?',
+                    description: 'Who do you wish to unCloud-Ban from the group?',
                     autocomplete: true,
                     required: true,
                     type: 'RobloxUser'
