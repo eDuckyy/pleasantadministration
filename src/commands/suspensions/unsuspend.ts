@@ -24,7 +24,7 @@ class UnsuspendCommand extends Command {
     constructor() {
         super({
             trigger: 'unsuspend',
-            description: 'Removes a suspension from a user, and ranks them back to their previous role.',
+            description: 'Removes a user\'s suspension, and ranks them back to their previous role.',
             type: 'ChatInput',
             module: 'suspensions',
             args: [
