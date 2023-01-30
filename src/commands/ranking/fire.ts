@@ -23,21 +23,21 @@ class FireCommand extends Command {
     constructor() {
         super({
             trigger: 'fire',
-            description: 'Sets a users rank in the Roblox group to 1.',
+            description: 'Demotes a user in the Roblox group.',
             type: 'ChatInput',
             module: 'ranking',
             args: [
                 {
                     trigger: 'roblox-user',
-                    description: 'Who do you want to fire?',
+                    description: 'Who do you want to demote?',
                     autocomplete: true,
                     type: 'RobloxUser',
                 },
                 {
                     trigger: 'reason',
-                    description: 'If you would like a reason to be supplied in the logs, put it here.',
+                    description: 'Why would you like to demote this user?',
                     isLegacyFlag: true,
-                    required: false,
+                    required: true,
                     type: 'String',
                 },
             ],
