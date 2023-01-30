@@ -22,7 +22,7 @@ class ExileCommand extends Command {
     constructor() {
         super({
             trigger: 'exile',
-            description: 'Exiles a user from the Roblox group.',
+            description: 'Removes a user from the entire group.',
             type: 'ChatInput',
             module: 'admin',
             args: [
@@ -34,9 +34,9 @@ class ExileCommand extends Command {
                 },
                 {
                     trigger: 'reason',
-                    description: 'If you would like a reason to be supplied in the logs, put it here.',
+                    description: 'What is the reason for removing a member from our group?',
                     isLegacyFlag: true,
-                    required: false,
+                    required: true,
                     type: 'String',
                 },
             ],
