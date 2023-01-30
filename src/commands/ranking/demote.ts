@@ -22,7 +22,7 @@ class PromoteCommand extends Command {
     constructor() {
         super({
             trigger: 'demote',
-            description: 'Demotes a user in the Roblox group.',
+            description: 'Sets a users rank down by one.',
             type: 'ChatInput',
             module: 'ranking',
             args: [
@@ -34,9 +34,9 @@ class PromoteCommand extends Command {
                 },
                 {
                     trigger: 'reason',
-                    description: 'If you would like a reason to be supplied in the logs, put it here.',
+                    description: 'Why would you like to demote this user?',
                     isLegacyFlag: true,
-                    required: false,
+                    required: true,
                     type: 'String',
                 },
             ],
