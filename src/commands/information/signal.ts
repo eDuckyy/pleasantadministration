@@ -8,7 +8,7 @@ class SignalCommand extends Command {
     constructor() {
         super({
             trigger: 'signal',
-            description: 'If configured, this will store a command and make it available through our API.',
+            description: 'If configured, this will store a command and make it available through our API. Restricted to Pleasant Development.',
             type: 'ChatInput',
             module: 'information',
             args: [
