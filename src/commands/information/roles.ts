@@ -7,7 +7,7 @@ class RolesCommand extends Command {
     constructor() {
         super({
             trigger: 'roles',
-            description: 'Displays a list of roles on the group.',
+            description: 'Displays a list of group roles.',
             type: 'ChatInput',
             module: 'information',
         });
