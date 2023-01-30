@@ -22,7 +22,7 @@ import { provider } from '../../database/router';
 class FireCommand extends Command {
     constructor() {
         super({
-            trigger: 'fire',
+            trigger: 'demote',
             description: 'Demotes a user in the Roblox group.',
             type: 'ChatInput',
             module: 'ranking',
